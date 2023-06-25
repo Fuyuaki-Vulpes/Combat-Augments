@@ -2,7 +2,6 @@ package com.fuyuvulpes.combataugments.item;
 
 import com.fuyuvulpes.combataugments.client.renderer.SpellBookRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
@@ -16,18 +15,21 @@ import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-import org.joml.Vector3d;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class SpellBookItem extends Item implements GeoItem {
+
+
+    public List<SpellScrollItem> spellList;
+
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
@@ -116,7 +118,22 @@ public class SpellBookItem extends Item implements GeoItem {
     }
 
 
+    public SpellScrollItem getSpellAtIndex(int index) {
+        return spellList.get(index);
+    }
 
+    public boolean addSpell(SpellScrollItem spell, ItemStack stack){
+        if (spellList.size() < 6){
+
+            spellList.add(spell);
+            stack.shrink(1);
+
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
     @Override
     public void onUseTick(Level pLevel, LivingEntity pLivingEntity, ItemStack pStack, int pRemainingUseDuration) {
