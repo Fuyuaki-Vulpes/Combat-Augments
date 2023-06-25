@@ -25,9 +25,9 @@ public class BlockRegistry {
 
 
 
-    /* public static final RegistryObject<Block> GOLEM_CORE = registerBlock("golem_core", () -> new GolemCoreBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4.0F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()
+    public static final RegistryObject<Block> GOLEM_CORE = registerBlock("golem_core", () -> new GolemCoreBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4.0F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()
             .lightLevel(f -> {return 15;}).emissiveRendering((pState, pLevel, pPos) -> {return true;})));
-    */
+
 
 
 

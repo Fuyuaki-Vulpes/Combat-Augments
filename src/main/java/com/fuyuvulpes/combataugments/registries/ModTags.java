@@ -4,14 +4,19 @@ import com.fuyuvulpes.combataugments.CombatantsAugmentsMod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraftforge.common.Tags;
 
 public class ModTags {
 
     public static class Blocks{}
     public static class EntityTypes{}
-    public static class Items{}
+    public static class Items{
+        private static TagKey<Item> tag(String name) {
+            return TagKey.create(Registries.ITEM, new ResourceLocation(CombatantsAugmentsMod.MODID, name));
+        }
+
+    }
     public static class Fluids{}
 
     public static class Biomes {

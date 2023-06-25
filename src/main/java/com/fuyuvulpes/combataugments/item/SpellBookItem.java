@@ -1,8 +1,11 @@
 package com.fuyuvulpes.combataugments.item;
 
 import com.fuyuvulpes.combataugments.client.renderer.SpellBookRenderer;
+import com.fuyuvulpes.combataugments.registries.ModTags;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -10,6 +13,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
@@ -29,6 +33,8 @@ public class SpellBookItem extends Item implements GeoItem {
 
 
     public List<SpellScrollItem> spellList;
+
+    int spellSlot = 0;
 
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -64,12 +70,46 @@ public class SpellBookItem extends Item implements GeoItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pUsedHand);
+        ItemStack offhandStack = pPlayer.getItemInHand(InteractionHand.OFF_HAND);
 
-        pPlayer.startUsingItem(pUsedHand);
-        return InteractionResultHolder.consume(itemstack);
+        if (pPlayer.isCrouching()){
+            cycleSpell();
+            return InteractionResultHolder.success(itemstack);
+        }
+
+        if (offhandStack.is(Items.AMETHYST_SHARD) && isDamaged(itemstack)){
+            offhandStack.shrink(1);
+            itemstack.setDamageValue(Math.max(0,itemstack.getDamageValue() - 12));
+            return InteractionResultHolder.success(itemstack);
+
+        }
+        if (offhandStack.getItem() instanceof SpellScrollItem spellScroll){
+            addSpell(spellScroll, offhandStack);
+            return InteractionResultHolder.success(itemstack);
+
+        }
+
+        if (spellList.size() > 0){
+            if (!canAddSpell()){
+                pPlayer.displayClientMessage(Component.translatable("combataugments.spellbook.tooManySpells").withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.RED), true);
+
+                return InteractionResultHolder.fail(itemstack);
+            }
+
+            pPlayer.startUsingItem(pUsedHand);
+
+            return InteractionResultHolder.consume(itemstack);
+
+        }
+        else {
+            pPlayer.displayClientMessage(Component.translatable("combataugments.spellbook.noSpells").withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.RED), true);
+
+            return InteractionResultHolder.fail(itemstack);
+        }
+
+
+
     }
-
-
     public AABB getUseHitResult(LivingEntity livingEntity, Level level){
 
 
@@ -117,24 +157,6 @@ public class SpellBookItem extends Item implements GeoItem {
         return vec31;
     }
 
-
-    public SpellScrollItem getSpellAtIndex(int index) {
-        return spellList.get(index);
-    }
-
-    public boolean addSpell(SpellScrollItem spell, ItemStack stack){
-        if (spellList.size() < 6){
-
-            spellList.add(spell);
-            stack.shrink(1);
-
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
     @Override
     public void onUseTick(Level pLevel, LivingEntity pLivingEntity, ItemStack pStack, int pRemainingUseDuration) {
         BlockHitResult ray = pLevel.clip(new ClipContext(pLivingEntity.getEyePosition(), getLineEnd(pLivingEntity,pLevel), net.minecraft.world.level.ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,  (Player) pLivingEntity));
@@ -156,8 +178,42 @@ public class SpellBookItem extends Item implements GeoItem {
 
         }
 
+        SpellScrollItem spell = getSpellAtIndex(spellSlot);
+
+        if (spell != null){
+            spell.doEffect(pLivingEntity,pLevel,pLivingEntity.getEyePosition(),getLineEnd(pLivingEntity,pLevel));
+        }
+
 
         //EntityHitResult entityHitResult =
+
+    }
+
+
+    public SpellScrollItem getSpellAtIndex(int index) {
+        return spellList.get(index);
+    }
+
+
+
+    public boolean canAddSpell(){
+        return spellList.size() < 6;
+    }
+
+    public void addSpell(SpellScrollItem spell, ItemStack stack){
+
+        spellList.add(spell);
+        stack.shrink(1);
+
+    }
+
+    public void cycleSpell(){
+        if (spellSlot >= spellList.size()){
+            spellSlot = 0;
+        }
+        else {
+            spellSlot++;
+        }
 
     }
 

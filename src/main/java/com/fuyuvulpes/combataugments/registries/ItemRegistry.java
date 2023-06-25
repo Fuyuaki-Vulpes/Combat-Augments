@@ -93,12 +93,16 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> SPELLBOOK = registerItem("spellbook", () -> new SpellBookItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> SPELL_EXPLOSION = registerItem("spell_explosion", () -> new SpellScrollItem(new Item.Properties(),"spell_explosion"));
+
+
 
 
     public static final RegistryObject<Item> DUNGEON_KEY = registerSimpleItem("dungeon_key");
 
     public static final RegistryObject<Item> DUNGEON_GUARD_ARM = registerItem("dungeon_guard_arm",
             DungeonGuardArmItem::new);
+
 
 
 

@@ -40,6 +40,8 @@
   "item.combataugments.longstring": "Long String",
   "item.combataugments.bandage": "Bandage",
   "item.combataugments.dungeon_key": "Dungeon Key",
+  "item.combataugments.spellbook": "Spellbook",
+  "item.combataugments.spell_scroll": "Spell Scroll",
   "item.combataugments.dungeon_guard_arm": "Dungeon Guard Arm",
   "item.combataugments.gate_pottery_sherd": "Gate Pottery Sherd",
 
@@ -47,6 +49,9 @@
   "item.combataugments.dungeon_guard_spawn_egg": "Dungeon Guard Spawn Egg",
   "item.combataugments.yuki_onna_spawn_egg": "Yuki Onna Spawn Egg",
 
+  "combataugments.spellbook.tooManySpells": "Spells registered in book is already at limit",
+  "combataugments.spellbook.noSpells": "There are no spells registered in book",
+  "combataugments.spell_scroll.Description": "There are no spells registered in book",
 
 
   "block.combataugments.explosive_barrel": "Explosive Barrel",

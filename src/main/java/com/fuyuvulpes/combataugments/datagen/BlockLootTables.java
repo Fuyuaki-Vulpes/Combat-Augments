@@ -16,7 +16,7 @@ public class BlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(BlockRegistry.EXPLOSIVE_BARREL.get());
-        //dropSelf(BlockRegistry.GOLEM_CORE.get());
+        dropSelf(BlockRegistry.GOLEM_CORE.get());
         dropSelf(BlockRegistry.DUNGEON_DISPENSER.get());
         dropSelf(BlockRegistry.DUNGEON_WALL_TILES.get());
         dropSelf(BlockRegistry.DUNGEON_FLOOR_TILES.get());
