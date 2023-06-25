@@ -1,0 +1,6 @@
+{
+  "parent": "combataugments:item/handheld_big",
+  "textures": {
+    "layer0": "combataugments:item/iron_halberd"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "combataugments:block/paper_door_bottom",
+    "top": "combataugments:block/paper_door_top"
+  }
+}

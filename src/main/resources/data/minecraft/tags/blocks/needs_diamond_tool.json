@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "combataugments:dungeon_wall_tiles",
+    "combataugments:dungeon_floor_tiles",
+    "combataugments:dungeon_wall_stairs",
+    "combataugments:dungeon_floor_stairs",
+    "combataugments:dungeon_wall_slab",
+    "combataugments:dungeon_floor_slab",
+    "combataugments:dungeon_wall_wall",
+    "combataugments:dungeon_floor_wall",
+    "combataugments:dungeon_dispenser",
+    "combataugments:dungeon_door",
+    "combataugments:golem_core"
+
+  ]
+}

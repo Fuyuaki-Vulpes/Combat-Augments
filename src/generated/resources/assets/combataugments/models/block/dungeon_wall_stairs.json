@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "combataugments:block/dungeon_wall_tiles",
+    "side": "combataugments:block/dungeon_wall_tiles",
+    "top": "combataugments:block/dungeon_wall_tiles"
+  }
+}

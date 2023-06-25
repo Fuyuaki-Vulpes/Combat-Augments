@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "P": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  I",
+    " I ",
+    "P  "
+  ],
+  "result": {
+    "item": "combataugments:stone_katana"
+  },
+  "show_notification": true
+}

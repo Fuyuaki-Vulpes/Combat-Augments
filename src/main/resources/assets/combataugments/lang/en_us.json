@@ -1,0 +1,93 @@
+{
+  "item.combataugments.longbow": "Longbow",
+  "item.combataugments.stone_greataxe": "Stone Greataxe",
+  "item.combataugments.iron_greataxe": "Iron Greataxe",
+  "item.combataugments.gold_greataxe": "Golden Greataxe",
+  "item.combataugments.diamond_greataxe": "Diamond Greataxe",
+  "item.combataugments.netherite_greataxe": "Netherite Greataxe",
+  "item.combataugments.stone_scythe": "Stone Scythe",
+  "item.combataugments.iron_scythe": "Iron Scythe",
+  "item.combataugments.gold_scythe": "Golden Scythe",
+  "item.combataugments.diamond_scythe": "Diamond Scythe",
+  "item.combataugments.netherite_scythe": "Netherite Scythe",
+  "item.combataugments.stone_naginata": "Stone Naginata",
+  "item.combataugments.iron_naginata": "Iron Naginata",
+  "item.combataugments.gold_naginata": "Golden Naginata",
+  "item.combataugments.diamond_naginata": "Diamond Naginata",
+  "item.combataugments.netherite_naginata": "Netherite Naginata",
+  "item.combataugments.stone_rapier": "Stone Rapier",
+  "item.combataugments.iron_rapier": "Iron Rapier",
+  "item.combataugments.gold_rapier": "Golden Rapier",
+  "item.combataugments.diamond_rapier": "Diamond Rapier",
+  "item.combataugments.netherite_rapier": "Netherite Rapier",
+  "item.combataugments.stone_katana": "Stone Katana",
+  "item.combataugments.iron_katana": "Iron Katana",
+  "item.combataugments.gold_katana": "Golden Katana",
+  "item.combataugments.diamond_katana": "Diamond Katana",
+  "item.combataugments.netherite_katana": "Netherite Katana",
+  "item.combataugments.stone_halberd": "Stone Halberd",
+  "item.combataugments.iron_halberd": "Iron Halberd",
+  "item.combataugments.gold_halberd": "Golden Halberd",
+  "item.combataugments.diamond_halberd": "Diamond Halberd",
+  "item.combataugments.netherite_halberd": "Netherite Halberd",
+  "item.combataugments.stone_dagger": "Stone Dagger",
+  "item.combataugments.iron_dagger": "Iron Dagger",
+  "item.combataugments.gold_dagger": "Golden Dagger",
+  "item.combataugments.diamond_dagger": "Diamond Dagger",
+  "item.combataugments.netherite_dagger": "Netherite Dagger",
+  "item.combataugments.siege_shield": "Siege Shield",
+  "item.combataugments.polestick": "Pole Stick",
+  "item.combataugments.longstring": "Long String",
+  "item.combataugments.bandage": "Bandage",
+  "item.combataugments.dungeon_key": "Dungeon Key",
+  "item.combataugments.dungeon_guard_arm": "Dungeon Guard Arm",
+  "item.combataugments.gate_pottery_sherd": "Gate Pottery Sherd",
+
+  "item.combataugments.wool_golem_spawn_egg": "Wool Golem Spawn Egg",
+  "item.combataugments.dungeon_guard_spawn_egg": "Dungeon Guard Spawn Egg",
+  "item.combataugments.yuki_onna_spawn_egg": "Yuki Onna Spawn Egg",
+
+
+
+  "block.combataugments.explosive_barrel": "Explosive Barrel",
+  "block.combataugments.golem_core": "Golem Core",
+  "block.combataugments.paper_door": "Paper Door",
+  "block.combataugments.dungeon_wall_tiles": "Dungeon Tiles",
+  "block.combataugments.dungeon_floor_tiles": "Dungeon Bricks",
+  "block.combataugments.dungeon_wall_stairs": "Dungeon Tile Stairs",
+  "block.combataugments.dungeon_floor_stairs": "Dungeon Bricks Stairs",
+  "block.combataugments.dungeon_wall_slab": "Dungeon Tile Slab",
+  "block.combataugments.dungeon_floor_slab": "Dungeon Brick Slab",
+  "block.combataugments.dungeon_wall_wall": "Dungeon Tile Wall",
+  "block.combataugments.dungeon_floor_wall": "Dungeon Brick Wall",
+  "block.combataugments.dungeon_dispenser": "Dungeon Dispenser",
+  "block.combataugments.dungeon_shatterable_floor": "Dungeon Shatterable Floor",
+  "block.combataugments.spikes": "Spikes",
+  "block.combataugments.poison_spikes": "Poisonous Spikes",
+  "block.combataugments.dungeon_door": "Dungeon Door",
+
+
+
+  "death.attack.bleed": "%1$s died from Blood Loss",
+  "death.attack.bleed.player": "%1$s bled out whilst fighting %2$s",
+  "death.attack.spikes": "%1$s was killed by a Spike Trap",
+  "death.attack.spikesFall": "%1$s fell onto a Spike Trap",
+
+
+
+  "combataugments.potion.vibration_occlusion": "Vibration Occlusion",
+  "combataugments.potion.bleeding:": "Bleeding",
+  "effect.combataugments.bleeding": "Bleeding",
+
+
+
+  "entity.combataugments.dagger": "Dagger",
+  "entity.combataugments.wool_golem": "Wool Golem",
+  "entity.combataugments.yuki_onna": "Yuki Onna",
+  "entity.combataugments.dungeon_guard": "Dungeon Guard",
+
+
+
+  "itemGroup.combataugments.main_tab": "Combatant's Augments"
+
+}

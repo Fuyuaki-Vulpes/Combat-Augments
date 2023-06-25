@@ -1,0 +1,35 @@
+{
+	"variants": {
+		"facing=down": {
+			"model": "combataugments:block/explosive_barrel",
+			"x": 180
+		},
+
+		"facing=east": {
+			"model": "combataugments:block/explosive_barrel",
+			"x": 90,
+			"y": 90
+		},
+
+		"facing=north": {
+			"model": "combataugments:block/explosive_barrel",
+			"x": 90
+		},
+
+		"facing=south": {
+			"model": "combataugments:block/explosive_barrel",
+			"x": 90,
+			"y": 180
+		},
+
+		"facing=up": {
+			"model": "combataugments:block/explosive_barrel"
+		},
+
+		"facing=west": {
+			"model": "combataugments:block/explosive_barrel",
+			"x": 90,
+			"y": 270
+		}
+	}
+}

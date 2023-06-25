@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "description": {
+      "text": "Resources for the Combatant's Augments Mod"
+    },
+    "forge:server_data_pack_format": 14,
+    "pack_format": 14
+  }
+}

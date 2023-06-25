@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#combataugments:has_structure/great_dungeon",
+  "step": "underground_structures",
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:skeleton",
+          "weight": 10,
+          "minCount": 1,
+          "maxCount": 4
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 3
+        },
+        {
+          "type": "minecraft:husk",
+          "weight": 8,
+          "minCount": 1,
+          "maxCount": 4
+        },
+        {
+          "type": "minecraft:stray",
+          "weight": 8,
+          "minCount": 1,
+          "maxCount": 5
+        },
+        {
+          "type": "minecraft:cave_spider",
+          "weight": 7,
+          "minCount": 1,
+          "maxCount": 7
+        },
+        {
+          "type": "minecraft:spider",
+          "weight": 8,
+          "minCount": 1,
+          "maxCount": 7
+        },
+        {
+          "type": "minecraft:silverfish",
+          "weight": 5,
+          "minCount": 1,
+          "maxCount": 8
+        },
+        {
+          "type": "minecraft:zombie",
+          "weight": 10,
+          "minCount": 1,
+          "maxCount": 4
+        },
+        {
+          "type": "minecraft:evoker",
+          "weight": 2,
+          "minCount": 1,
+          "maxCount": 3
+        },
+        {
+          "type": "minecraft:vindicator",
+          "weight": 4,
+          "minCount": 1,
+          "maxCount": 3
+        },
+        {
+          "type": "minecraft:slime",
+          "weight": 6,
+          "minCount": 1,
+          "maxCount": 4
+        },
+        {
+          "type": "minecraft:magma_cube",
+          "weight": 6,
+          "minCount": 1,
+          "maxCount": 4
+        }
+      ]
+    }
+  },
+  "start_pool": "combataugments:dungeon/entrance_room",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": -50
+    },
+    "max_inclusive": {
+      "absolute": 12
+    }
+  },
+  "size": 7,
+  "terrain_adaptation": "bury",
+  "max_distance_from_center": 116,
+  "use_expansion_hack": false
+}

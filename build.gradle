@@ -1,0 +1,198 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
+    }
+}
+
+
+plugins {
+    id 'eclipse'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+
+}
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+
+mixin {
+    add sourceSets.main, "combataugments.refmap.json"
+
+    config "combataugments.mixins.json"
+}
+
+
+version = "${minecraft_version}-${mod_version}"
+group = 'com.fuyuvulpes.combataugments' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = mod_id
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
+minecraft {
+    mappings channel: 'parchment', version: '1.19.3-2023.03.12-1.20.1'
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            property 'forge.enabledGameTestNamespaces', 'combataugments'
+
+            mods {
+                combataugments {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            property 'forge.enabledGameTestNamespaces', 'combataugments'
+
+            mods {
+                combataugments {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        gameTestServer {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            property 'forge.enabledGameTestNamespaces', 'combataugments'
+
+            mods {
+                combataugments {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            args '--mod', 'combataugments', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                combataugments {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+    repositories {
+
+        maven {
+            name "curios"
+            url "https://maven.theillusivec4.top/"
+        }
+
+        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+
+        maven {
+            name = "Jared's maven"
+            url = "https://maven.blamejared.com/"
+        }
+
+        maven {
+            name = "ModMaven"
+            url = "https://modmaven.dev"
+        }
+
+        maven {
+            url 'https://cursemaven.com'
+        }
+
+        maven {
+            url "https://api.modrinth.com/maven"
+        }
+
+
+
+
+    }
+
+    dependencies {
+
+        minecraft 'net.minecraftforge:forge:1.20.1-47.0.14'
+
+        implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.20:${gecko_version}")
+    //    runtimeOnly fg.deobf("curse.maven:worldedit-225608:4445118")
+
+
+        implementation fg.deobf("maven.modrinth:sherdsapi:ZPSs2RAq")
+
+
+        compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
+        compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
+        runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+
+        annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    }
+
+// Example for how to get properties into the manifest for reading at runtime.
+    jar {
+        manifest {
+            attributes([
+                    "Specification-Title"     : "combataugments",
+                    "Specification-Vendor"    : "fuyuvulpes",
+                    "Specification-Version"   : "1",
+                    "Implementation-Title"    : project.name,
+                    "Implementation-Version"  : project.jar.archiveVersion,
+                    "Implementation-Vendor"   : "fuyuvulpes",
+                    "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+            ])
+        }
+    }
+
+    jar.finalizedBy('reobfJar')
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                artifact jar
+            }
+        }
+        repositories {
+            maven {
+                url "file://${project.projectDir}/mcmodsrepo"
+            }
+        }
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    }
+

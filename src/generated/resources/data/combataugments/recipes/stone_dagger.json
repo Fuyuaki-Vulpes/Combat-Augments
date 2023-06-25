@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "P": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " I",
+    "PI"
+  ],
+  "result": {
+    "item": "combataugments:stone_dagger"
+  },
+  "show_notification": true
+}

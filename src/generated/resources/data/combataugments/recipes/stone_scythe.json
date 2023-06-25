@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    }
+  },
+  "pattern": [
+    "III",
+    "IP "
+  ],
+  "result": {
+    "item": "combataugments:stone_scythe"
+  },
+  "show_notification": true
+}

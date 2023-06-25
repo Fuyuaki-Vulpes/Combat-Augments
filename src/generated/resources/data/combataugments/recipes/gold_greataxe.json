@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    }
+  },
+  "pattern": [
+    "III",
+    "III",
+    " P "
+  ],
+  "result": {
+    "item": "combataugments:gold_greataxe"
+  },
+  "show_notification": true
+}

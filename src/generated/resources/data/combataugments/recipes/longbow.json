@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    },
+    "S": {
+      "item": "combataugments:longstring"
+    }
+  },
+  "pattern": [
+    " BS",
+    "P S",
+    " BS"
+  ],
+  "result": {
+    "item": "combataugments:longbow"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,9 @@
+
+{
+	"parent": "minecraft:block/cube_bottom_top",
+	"textures": {
+		"bottom": "combataugments:block/explosive_barrel_bottom",
+		"side": "combataugments:block/explosive_barrel_side",
+		"top": "combataugments:block/explosive_barrel_top"
+	}
+}

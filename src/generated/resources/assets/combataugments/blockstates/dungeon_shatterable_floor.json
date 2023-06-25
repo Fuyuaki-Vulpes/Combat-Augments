@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "combataugments:block/dungeon_shatterable_floor"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    }
+  },
+  "pattern": [
+    " I",
+    "PI"
+  ],
+  "result": {
+    "item": "combataugments:iron_dagger"
+  },
+  "show_notification": true
+}

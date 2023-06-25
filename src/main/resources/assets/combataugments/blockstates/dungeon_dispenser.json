@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "combataugments:block/dungeon_dispenser",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "combataugments:block/dungeon_dispenser",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "combataugments:block/dungeon_dispenser"
+    },
+    "facing=south": {
+      "model": "combataugments:block/dungeon_dispenser",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "combataugments:block/dungeon_dispenser"
+    },
+    "facing=west": {
+      "model": "combataugments:block/dungeon_dispenser",
+      "y": 270
+    }
+  }
+}

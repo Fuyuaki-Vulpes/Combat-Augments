@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    }
+  },
+  "pattern": [
+    "I",
+    "I",
+    "P"
+  ],
+  "result": {
+    "item": "combataugments:diamond_naginata"
+  },
+  "show_notification": true
+}

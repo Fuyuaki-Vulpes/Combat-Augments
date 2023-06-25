@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "combataugments:block/dungeon_floor_tiles",
+    "side": "combataugments:block/dungeon_floor_tiles",
+    "top": "combataugments:block/dungeon_floor_tiles"
+  }
+}

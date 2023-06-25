@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "minecraft:cherry_planks"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "CP",
+    "PP",
+    "PC"
+  ],
+  "result": {
+    "count": 3,
+    "item": "combataugments:paper_door"
+  },
+  "show_notification": true
+}

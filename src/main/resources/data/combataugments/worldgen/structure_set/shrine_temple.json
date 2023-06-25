@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "combataugments:shrine_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1283387011,
+    "spacing": 16,
+    "separation": 5
+  }
+}

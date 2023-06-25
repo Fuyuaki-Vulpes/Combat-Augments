@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    }
+  },
+  "pattern": [
+    "III",
+    "III",
+    " P "
+  ],
+  "result": {
+    "item": "combataugments:stone_greataxe"
+  },
+  "show_notification": true
+}

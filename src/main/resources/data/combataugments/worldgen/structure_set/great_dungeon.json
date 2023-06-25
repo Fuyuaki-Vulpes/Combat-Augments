@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "combataugments:great_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 742153035,
+    "spacing": 24,
+    "separation": 12
+  }
+}

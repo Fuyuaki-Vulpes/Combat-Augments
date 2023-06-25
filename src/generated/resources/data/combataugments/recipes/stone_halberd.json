@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    }
+  },
+  "pattern": [
+    "II ",
+    "I I",
+    " P "
+  ],
+  "result": {
+    "item": "combataugments:stone_halberd"
+  },
+  "show_notification": true
+}

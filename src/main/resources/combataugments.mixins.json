@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.fuyuvulpes.combataugments.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "spiritualisterra.refmap.json",
+  "mixins": [
+    "VibrationListenerMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}

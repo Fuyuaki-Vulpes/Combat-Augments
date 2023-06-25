@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "combataugments:polestick"
+    }
+  },
+  "pattern": [
+    "III",
+    "IP "
+  ],
+  "result": {
+    "item": "combataugments:diamond_scythe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "combataugments:block/dungeon_wall_slab"
+    },
+    "type=double": {
+      "model": "combataugments:block/dungeon_wall_tiles"
+    },
+    "type=top": {
+      "model": "combataugments:block/dungeon_wall_slab_top"
+    }
+  }
+}
