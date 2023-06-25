@@ -2,6 +2,7 @@ package com.fuyuvulpes.combataugments.registries;
 
 import com.fuyuvulpes.combataugments.CombatantsAugmentsMod;
 import com.fuyuvulpes.combataugments.item.*;
+import com.fuyuvulpes.combataugments.item.spells.ExplosionSpell;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -93,7 +94,7 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> SPELLBOOK = registerItem("spellbook", () -> new SpellBookItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> SPELL_EXPLOSION = registerItem("spell_explosion", () -> new SpellScrollItem(new Item.Properties(),"spell_explosion"));
+    public static final RegistryObject<Item> SPELL_EXPLOSION = registerItem("spell_explosion", () -> new ExplosionSpell(new Item.Properties()));
 
 
 

@@ -15,11 +15,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SpellScrollItem extends Item {
+public class SpellPageItem extends Item {
 
     private final String name;
 
-    public SpellScrollItem(Properties pProperties, String pName) {
+    public SpellPageItem(Properties pProperties, String pName) {
         super(pProperties.rarity(Rarity.RARE).stacksTo(8));
 
         this.name = pName;
@@ -28,7 +28,7 @@ public class SpellScrollItem extends Item {
 
     @Override
     public String getDescriptionId() {
-        return Util.makeDescriptionId("item", new ResourceLocation(CombatantsAugmentsMod.MODID,"spell_scroll"));
+        return Util.makeDescriptionId("item", new ResourceLocation(CombatantsAugmentsMod.MODID,"spell_page"));
     }
 
     @Override
@@ -36,6 +36,11 @@ public class SpellScrollItem extends Item {
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
         pTooltipComponents.add(Component.translatable("item.combataugments." + name));
     }
+
+    public Component getName(){
+        return Component.translatable("item.combataugments." + name);
+    }
+
 
     public void doEffect(LivingEntity livingEntity, Level level, Vec3 startPos, Vec3 endPos){
 

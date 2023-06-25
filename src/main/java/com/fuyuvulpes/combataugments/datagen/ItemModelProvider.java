@@ -19,6 +19,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         simpleItem(ItemRegistry.BANDAGE);
         simpleItem(ItemRegistry.DUNGEON_KEY);
         simpleItem(ItemRegistry.GATE_POTTERY_SHERD);
+        simpleItem(ItemRegistry.SPELL_EXPLOSION);
 
         
         simpleItem(ItemRegistry.WOOL_GOLEM_SPAWN_EGG);

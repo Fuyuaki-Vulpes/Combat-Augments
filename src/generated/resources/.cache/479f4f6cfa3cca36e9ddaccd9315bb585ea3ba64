@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-21T16:02:00.0086046	Item Models: combataugments
+// 1.20.1	2023-06-25T11:42:31.448661	Item Models: combataugments
 cef273b379913fd58b0198240ddf7756a61d3903 assets/combataugments/models/item/bandage.json
 76b3d532319c4786e8dd2ad24c183afdaa7dff30 assets/combataugments/models/item/diamond_dagger.json
 362f0dfb7e41c3167f297553a431068913c2d6ef assets/combataugments/models/item/diamond_greataxe.json
@@ -33,6 +33,7 @@ ab415d6a011fc1ab20039821aa4d16e31e4ba708 assets/combataugments/models/item/nethe
 d97507ffecf8ea81e30f1466b0f2eead0bc9767a assets/combataugments/models/item/netherite_rapier.json
 076201795e6bfdb0a750d9af97feeeece042de04 assets/combataugments/models/item/netherite_scythe.json
 a2b035e2497410145bf2aa1d1d7ac16151238deb assets/combataugments/models/item/polestick.json
+aa09e12c370dc98fedd4ec0831165135b8823176 assets/combataugments/models/item/spell_explosion.json
 4ce5fe460a294cfbdc467a39130c7b3f3ab5ebee assets/combataugments/models/item/stone_dagger.json
 7580b5419705b6f1d1529f97a703e80ca1acf5a0 assets/combataugments/models/item/stone_greataxe.json
 21f7e373386e540294ce4be709b9b8849c0aebd1 assets/combataugments/models/item/stone_halberd.json

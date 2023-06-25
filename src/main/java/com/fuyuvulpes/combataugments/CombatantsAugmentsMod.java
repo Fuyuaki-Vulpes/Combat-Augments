@@ -123,6 +123,12 @@ public class CombatantsAugmentsMod
 
             event.accept(ItemRegistry.DUNGEON_GUARD_ARM);
 
+            event.accept(ItemRegistry.SPELLBOOK);
+
+            event.accept(ItemRegistry.SPELL_EXPLOSION);
+
+
+
             event.accept(BlockRegistry.EXPLOSIVE_BARREL);
             //event.accept(BlockRegistry.GOLEM_CORE);
 

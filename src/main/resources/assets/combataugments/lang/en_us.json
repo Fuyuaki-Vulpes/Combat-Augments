@@ -41,7 +41,7 @@
   "item.combataugments.bandage": "Bandage",
   "item.combataugments.dungeon_key": "Dungeon Key",
   "item.combataugments.spellbook": "Spellbook",
-  "item.combataugments.spell_scroll": "Spell Scroll",
+  "item.combataugments.spell_page": "Spell Page",
   "item.combataugments.dungeon_guard_arm": "Dungeon Guard Arm",
   "item.combataugments.gate_pottery_sherd": "Gate Pottery Sherd",
 
@@ -51,7 +51,12 @@
 
   "combataugments.spellbook.tooManySpells": "Spells registered in book is already at limit",
   "combataugments.spellbook.noSpells": "There are no spells registered in book",
-  "combataugments.spell_scroll.Description": "There are no spells registered in book",
+  "combataugments.spellbook.count": "Spells Registered: ",
+  "combataugments.spell_page.description": "Spell Page",
+
+  "item.combataugments.spell_explosion": "Explosive Blast",
+
+
 
 
   "block.combataugments.explosive_barrel": "Explosive Barrel",

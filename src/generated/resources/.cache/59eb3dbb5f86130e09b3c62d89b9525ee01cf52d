@@ -1,4 +1,4 @@
-// 1.20.1	2023-06-14T14:56:59.8405001	Loot Tables
+// 1.20.1	2023-06-25T11:42:31.438665	Loot Tables
 c52d90b1edd7a5bb47c81378074d50a3f058f48b data/combataugments/loot_tables/blocks/dungeon_dispenser.json
 f0aa5979613234d0891b2acf8e93f829a8f7e62e data/combataugments/loot_tables/blocks/dungeon_door.json
 04c18495dac88bfca593a364105847039e5f4abb data/combataugments/loot_tables/blocks/dungeon_floor_slab.json
@@ -11,6 +11,7 @@ aa8bcd4fca11f68e1331f8df9c0c18dcbc5018a3 data/combataugments/loot_tables/blocks/
 ffc93a9f894fe7ec73281e644a13f65abfd59cbc data/combataugments/loot_tables/blocks/dungeon_wall_tiles.json
 db56a20e195cca85227aea23d0456dab7b5474d4 data/combataugments/loot_tables/blocks/dungeon_wall_wall.json
 d66680a854a112e2a1857cf5dd1c62c5d88abce7 data/combataugments/loot_tables/blocks/explosive_barrel.json
+0c73dd3b918cd8fd69c03f00260b6b763f5dc3a2 data/combataugments/loot_tables/blocks/golem_core.json
 e83764ebc720e5723bd8e1f8f7ff47355ce934c6 data/combataugments/loot_tables/blocks/paper_door.json
 120936ee11fb04c6377a83ffa364d75e35fd1df8 data/combataugments/loot_tables/blocks/poison_spikes.json
 c55bb0ddfcec86455059f8c5579fd0166ac076a4 data/combataugments/loot_tables/blocks/spikes.json
